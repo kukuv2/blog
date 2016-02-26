@@ -6,17 +6,17 @@
 ### Cache-Control,Expires(响应报头)
 这两个响应报头是浏览器缓存机制的第一道坎.当你发起一个 GET 请求时,服务器返回的响应报头里含有这两个报头,那么你下一次发起请求时(以某种方式, F5刷新除外),在你设置的资源过期时间前浏览器都不会再次请求服务器,而是直接使用已经缓存的版本.并且 status code 是200.这也是我上面说的不是只有返回了304才会使用缓存
 
-![clipboard.png](/img/bVqjrp)
+![clipboard.png](https://segmentfault.com/img/bVqjrp)
 在 chrome 里我们可以清楚的看到 status code 旁边写的是(from cache).响应报头大致的形式也就是像上面那张图一样.
 
 ### Last-Modified,ETag(响应报头);If-Modified-Since,If-None-Match(请求报头)
 这几个报头可以说是浏览器缓存机制里的第二道坎.当你请求某个资源时,如上面的图,响应报头会设置 Last-Modified 和 ETag,Last-Modified 是这个资源的最后修改时间, ETag 是该资源的唯一标识符.这两个值会在你再一次请求该资源时以 If-Modified-Since 和 If-None-Match 的形式附在请求头里发给服务器由服务器判读该资源是否过期.如果没过期,返回304,如果过期了,返回带有响应主体也就是 content并且status code为200的响应.请求报头大致如下.这个过程称为服务器再认证.
 
-![clipboard.png](/img/bVqjrT)
+![clipboard.png](https://segmentfault.com/img/bVqjrT)
 
 ### 这两种报头的作用区间
 
-![clipboard.png](/img/bVqjxa)
+![clipboard.png](https://segmentfault.com/img/bVqjxa)
 借用一张简洁的图来展示它们的作用区间的区别
 
 ### GET与 POST
@@ -64,4 +64,4 @@ bundle.js
 > html5高级程序设计
 
 
-  [1]: /img/bVqFvn
+  [1]: https://segmentfault.com/img/bVqFvn
