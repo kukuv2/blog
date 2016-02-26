@@ -7,17 +7,7 @@ instanceof用来检测对象的原型链. 但有时候 instanceof 也会不好�
 
 typeof : 因为NaN属于 number 的一种所以 typeof NaN === 'number' ; 在javascript 里 Object,String等都是一种构造函数,所以 typeof Object === 'function',typeof String === 'function'.
 typeof 所有的检测结果如下:
-|Type|	Result|
-|:----------|:------|
-|Undefined	|"undefined"|
-|Null	"object" |(see below)|
-|Boolean	|"boolean"|
-|Number	|"number"|
-|String|	"string"|
-|Symbol |(new in ECMAScript 2015)	"symbol"|
-|Host object |(provided by the JS environment)	Implementation-dependent|
-|Function object (implements [[Call]] in ECMA-262 terms)|	"function"|
-|Any other object|	"object"|
+![img](https://github.com/kukuv2/blog/picture/屏幕快照 2016-02-26 上午11.11.45.png)
 
 ## 与操作符结合后的 javascript 类型转换
 		弱类型的 javascript 的许多操作符会自动类型转换,很多时候转换后的
