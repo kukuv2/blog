@@ -1,4 +1,6 @@
 .idea
+.deploy_git
+public
 # Logs
 logs
 *.log
